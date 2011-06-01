@@ -1,0 +1,22 @@
+<!--
+  Edit View Page
+-->
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt">
+	<f:entry title="Build Pipeline View Title" field="buildViewTitle">
+		<f:textbox name="buildViewTitle"/> 
+  	</f:entry>
+  	  
+    <f:entry title="Select Initial Job" field="selectedJob">    
+		<f:select name="selectedJob"> 
+		</f:select>
+  	</f:entry>
+  
+  	<f:entry title="No Of Displayed Builds" field="noOfDisplayedBuilds">
+		<f:select name="noOfDisplayedBuilds">
+    	</f:select>
+  	</f:entry>
+
+  	<f:entry title="Restrict Trigger to the Most Recent Build" field="triggerOnlyLatestJob">
+		<f:booleanRadio field="triggerOnlyLatestJob" true="Yes" false="No" default="false"/>
+  	</f:entry>
+</j:jelly>

@@ -1,0 +1,197 @@
+#build-pipeline-plugin-content {
+	min-width: 400px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	
+	padding: 20px;
+	background: rgba(6, 72, 131, 0.1);
+}
+
+span.status, span.status img {
+	height: 24px;
+	width: 24px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.rounded {
+	height: 70px;
+	width: 120px;
+	
+	-moz-opacity: 0.9;
+	-webkit-opacity: 0.9;
+	opacity: 0.9;
+	
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-moz-box-shadow: 4px 4px 4px #555;
+	-webkit-box-shadow: 4px 4px 4px #555;
+	box-shadow: 4px 4px 4px #555;
+	
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+	padding: 3px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.rounded > div {
+	display: table-cell;
+  	vertical-align: middle;
+  	height: 70px;
+	width: 120px;
+}
+
+.secondaryInfo {
+	font-size: 9px;
+	font-weight: normal;
+}
+
+#pipelines {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#legendView td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+td.next {
+	width: 40px;
+	vertical-align: middle;
+}
+
+tbody.pipelineGroup {
+	background-color: #fcae3f;
+}
+
+tbody > tr:first-child > td:first-child {
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px; 
+}
+
+tbody >  tr:first-child > td:last-child { 	
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px; 
+	border-top-right-radius: 4px; 
+}
+
+tbody >  tr:last-child > td:first-child { 
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;  
+	border-bottom-left-radius: 4px; 
+}
+
+tbody >  tr:last-child > td:last-child { 
+	-moz-border-radius-bottomlright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px; 
+}
+
+
+tr.build-pipeline td, tr#project-pipeline td {
+	padding: 6px 6px 8px 6px;
+}
+
+tr.spacerRow td {
+	padding: 3px;
+}
+
+.legend {
+	background-color: #8b8989;
+}
+
+.revision {
+	background-color: #8b8989;
+}
+
+.SUCCESS {
+	background-color: #1bd130;
+	color: #222;
+}
+
+
+.FAILURE {
+	background-color: #ef2929;
+}
+
+.UNSTABLE {
+	background-color: #fcd116;
+	color: #222;
+}
+
+.BUILDING {
+	background-color: #f7f94b;
+	color: #222;
+}
+
+.NOT_BUILT {
+	background-color: #f7f94b;
+	color: #222;
+}
+
+.ABORT {
+	background-color: #bab4b4;
+}
+
+.PENDING {
+	background-color: #00ccff;
+	color: #222;
+}
+
+.MANUAL {
+	background-color: #00ccff;
+	color: #222;
+}
+
+.PROJECT {
+	background-color: #aba8a8;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.BuildViewMargin {
+	margin-left: 30px;
+}
+
+#projectHeader {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-width: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#side-panel {
+	display: none;
+}
+
+#view-message {
+	display: none;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
+	color: expression(this.parentNode.currentStyle['color']); /* IE fix */
+	font-weight: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: inherit;
+	color: expression(this.parentNode.currentStyle['color']);
+	font-weight: inherit;
+}
