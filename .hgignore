@@ -1,0 +1,9 @@
+^target$
+^work$
+^bin
+^.classpath
+^.project
+^.settings
+^.checkstyle
+^.DS_Store
+^.idea$
